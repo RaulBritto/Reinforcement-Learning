@@ -40,7 +40,7 @@ class Task():
             reward += self.get_reward()
             pose_all.append(self.sim.pose)
             if done :
-                reward += 15
+                reward += 10
         next_state = np.concatenate(pose_all)
         return next_state, reward, done
 
